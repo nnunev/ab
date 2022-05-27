@@ -1,0 +1,31 @@
+npx create-react-app ab
+ cd ab
+ npm install @sanity/client
+ npm install react-router-dom 
+npm install react-social-icons
+
+ https://www.sanity.io/manage/personal/project/dezp5pgn/api#cors-origins
+ add CORS http://localhost:3000/
+
+
+ In React dir(ab):
+npm install @sanity/client
+in src folder create client.js file
+
+import sanityClient from '@sanity/client'
+
+export default sanityClient ({
+    projectId:"dezp5pgn",
+    dataset: "production"
+})
+
+
+
+
+c
+if eslint-config-react-app issue in package.json add 
+"browser": {
+  "fs": false,
+  "path": false,
+  "os": false
+}
